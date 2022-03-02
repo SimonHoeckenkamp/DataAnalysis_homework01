@@ -1,0 +1,14 @@
+
+Question 1.3b-5:\\	
+\textsl{ The lab collects individual level data on 50000 humans on about 100 features including IQ and chocolate consumption. They find that the relation between chocolate consumption and IQ has a p-value higher than 0.05. However, they find that there are some other variables in the data set that has p-value lower than 0.05, namely, their father's income and number of siblings. So they decide to not write about chocolate consumption, but rather, report these statistically significant results in their paper, and provide possible explanations.}\\
+
+\textsl{Is this approach correct? }\\
+
+Answer:\\
+Of course the lab could write about different effects on the IQ, if the study shows that the first assumption was not correct. But there are some dangers if a study with multiple features is scanned for correlations. A significance level of 0.05 results in 5 expected significant events out of 100.\\
+
+A possible way to reduce the number of wrong rejections of the null hypothesis is for example the usage of the Family-Wise Error Rate (FWER) or the False Discovery Rate (FDR). With help of one of these tools we can reduce the risk of rejecting the null hypothesis too soon.\\
+
+The FWER expresses the probability of making at least one false discovery, whereas the FDR estimates the fraction of making false significant discoveries in comparison with the significant discoveries. One of these values should be mentioned to give the reader any information about this aspect.\\
+
+Without any of these tests, the result should at best be used for further investigations. Here again, the p-value needs to be explained in a context to be of any value.\\

@@ -1,0 +1,23 @@
+
+Question 1.5.8:\\	
+\textsl{ Show that the extent of repeated independent testing by different teams can reduce the probability of the research being true.}\\
+	
+\textsl{Start by writing the PPV as}
+
+\[ PPV = \frac{\mathbf{P}(\textrm{\textsl{relation exists, at least one of the n repetitions finds significant}})}{\mathbf{P}(\textrm{\textsl{at least one of the n repetitions finds significant}})} \]
+
+\textsl{(Note that this does not include a bias term and you will not need one to answer this question.)}\\
+
+Answer:\\
+
+\[ PPV = \frac{\mathbf{P}(\textrm{\textsl{relation exists, at least one of the n repetitions finds significant}})}{\mathbf{P}(\textrm{\textsl{at least one of the n repetitions finds significant}})}\]
+\[	= \frac{R(1-\beta^n)}{R+1-(1-\alpha)^n - R\beta^n} \] 
+
+with $\alpha$ as significance level and $\beta$ as type II error rate.\\
+
+To show that the $PPV$ decreases with increasing $n$, we have to check whether the term \[\frac{\partial(PPV)}{\partial n} < 0, \forall n \in \{1,2,...\} \]
+holds.\\
+
+This is indeed true for $1-\beta \ge \alpha$ according to the article "Why Most Published Research Findings Are False".
+
+
